@@ -11,3 +11,11 @@ Please contribute, file issues, and make PRs. More than anything I'm sure there 
 MIT
 
 [gh-page]: http://btholt.github.io/complete-intro-to-react/
+
+##
+
+Links
+
+http://www.mattgreer.org/articles/react-internals-part-one-basic-rendering/
+
+https://holmeshe.me/categories/ "Understanding The React Source Code"

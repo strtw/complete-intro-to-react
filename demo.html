@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="node_modules/react/dist/react.js"></script>
+    <script src="node_modules/react-dom/dist/react-dom.js"></script>
+    <script>
+        const ce = React.createElement;
+        const component = function(props){
+            return(
+              ce('div',null,
+                ce('h1',{style:{color:props.color}},props.title)
+              )
+            )
+        }
+
+        const title = function(){
+            return(
+            ce("div",{id:"my-first-component"},
+                ce(component,{color:"blue",title:"1"}),
+                ce(component,{color:"green",title:"2"})
+               )
+            )
+        }
+
+
+        ReactDOM.render(
+            ce(title),
+            document.getElementById('app')
+        );
+    </script>
+
+</body>
+
+</html>
